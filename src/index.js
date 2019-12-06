@@ -23,11 +23,21 @@ app.set("view engine", ".hbs");
 
 // Middleware
 app.use(morgan("dev"));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 // Global Variables
+app.use((req, res, next) => {
+  next();
+});
 
 // Routes
 app.use(require("./routes/index.js"));
+app.use(require("./routes/authentication.js"));
+app.use("/links", require("./routes/links.js"));
+
+// Public
+app.use(express.static(path.join(__dirname, "public")));
 
 // Start server
 app.listen(app.get("port"), () => {
