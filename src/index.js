@@ -16,7 +16,7 @@ app.engine(
     layoutsDir: path.join(app.get("views"), "layouts"),
     partialsDir: path.join(app.get("views"), "partials"),
     extname: ".hbs",
-    helpers: require("./lib/handlebars.js")
+    helpers: require("./lib/handlebars")
   })
 );
 app.set("view engine", ".hbs");
@@ -32,9 +32,9 @@ app.use((req, res, next) => {
 });
 
 // Routes
-app.use(require("./routes/index.js"));
-app.use(require("./routes/authentication.js"));
-app.use("/links", require("./routes/links.js"));
+app.use(require("./routes/index"));
+app.use(require("./routes/authentication"));
+app.use("/links", require("./routes/links"));
 
 // Public
 app.use(express.static(path.join(__dirname, "public")));
