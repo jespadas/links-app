@@ -3,9 +3,10 @@
     <div class="col-md-4 mx-auto">
       <div class="card text-center">
         <div class="card-header">
-          <h3>SignUp</h3>
+          <h3>Sign Up</h3>
         </div>
         <div class="card-body">
+          <img src="/img/signup.png" alt="logo je" class="card-img-top mx-auto m-2 rounded-circle w-50">
           <form action="/signup" method="POST">
             <div class="form-group">
               <input type="text" name="fullname" placeholder="Full name" class="form-control" autofocus>
@@ -17,7 +18,10 @@
               <input type="password" name="password" placeholder="Password" class="form-control">
             </div>
             <div class="form-group">
-              <button class="btn btn-success btn-block">SignUp</button>
+              <button class="btn btn-success btn-block">Sign Up</button>
+            </div>
+            <div class="form-group">
+              <span>Already member ? </span><a href="/signin"> Sign In </a>
             </div>
           </form>
         </div>
