@@ -10,6 +10,7 @@
   "author": "Julio Espadas <contact@julioespadas.com>",
   "license": "MIT",
   "dependencies": {
+    "underscore": ">=1.12.1"
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
     "express": "^4.17.1",
