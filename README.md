@@ -1,2 +1,2 @@
 ## links-app
-Aplicación web Backend y Frontend, utilizando Nodejs, Mysql, Express y otras tecnologías de Javascript. Es una aplicación para guardar tus enlaces favoritos.
+Backend and Frontend web application, using Nodejs, Mysql, Express and other Javascript technologies. It is an application to save your favorite links.
